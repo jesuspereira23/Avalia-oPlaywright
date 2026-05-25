@@ -2,8 +2,8 @@ import { test, expect } from '@playwright/test';
 // Mudança aqui: Importação específica para evitar o conflito de módulos
 import { authenticator } from 'otplib';
 
-const OTP_SECRET = 'AROGZAK4OLYH5KTWLS5AETEUOEEVNNTC';
-const USER_EMAIL = 'e2e-super-teacher-01@example.com';
+const OTP_SECRET = 'EHHYZHLVKER7MJGP';
+const USER_EMAIL = 'e2e-super-teacher-04@example.com';
 const USER_PASS = 'password';
 
 test('Fluxo de Login Completo com Gerador de 2FA', async ({ page }) => {

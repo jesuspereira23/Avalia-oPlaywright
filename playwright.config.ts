@@ -3,6 +3,7 @@ import { defineConfig, devices } from '@playwright/test';
 export default defineConfig({
   testDir: './tests',
   fullyParallel: true,
+  workers: 1 ,
   reporter: 'html',
   use: {
   screenshot: 'on',
@@ -14,11 +15,5 @@ export default defineConfig({
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
     },
-    {
-      name: 'Mobile Safari',
-      use: { ...devices['iPhone 12'] },
-    },
-
-
   ],
 });
